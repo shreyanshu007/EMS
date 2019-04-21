@@ -1,0 +1,57 @@
+{% extends 'login/basic.html' %}
+
+{% block title%}Faculty{% endblock %}
+{% block home_active%}active{% endblock %}
+
+
+{% block home_current%}
+	<span class="sr-only">(current)</span>
+{% endblock %}
+
+
+
+{% block style%}
+{% endblock %}
+
+
+{% block body%}
+
+	<style type="text/css">
+		#leavecard { 
+		  	padding-top: 35px;
+		  	padding-bottom: 35px;
+		}
+
+		 #cont {
+		 	padding-top: 50px;
+		 }
+	</style>
+
+	<div class="container" id="cont"> 
+
+		<div id="leavecard">
+
+		    <div class="card w-50">
+			  <div class="card-body">
+			    <h5 class="card-title">Leave</h5>
+			    <p class="card-text">You have {{ left_leave }} leave left this Year.</p>
+			    <a href="/login/new_leaves" class="btn btn-primary">Apply For Leave</a>
+			  </div>
+			</div>
+
+		</div>
+
+		<div class="card" id="statuscard" style="width: 18rem;">
+		  <div class="card-body">
+		    <h5 class="card-title">Leave Status</h5>
+		    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+		    <p class="card-text">You have no leave pending.</p>
+		  <a class="btn btn-primary btn-lg" href="/login/leaves" role="button">View</a>
+
+		  </div>
+		</div>
+
+
+	</div>
+
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends 'login/basic.html' %}
+
+{% block title%}Old Leaves{% endblock %}
+{% block old_leaves_active%}active{% endblock %}
+
+
+{% block old_leaves_current%}
+	<span class="sr-only">(current)</span>
+{% endblock %}
+
+
+
+{% block style%}
+{% endblock %}
+
+
+{% block body%}
+
+<style>
+	 #leavecard { 
+	  	padding-top: 35px;
+	  	padding-bottom: 35px;
+	}
+
+	 #cont {
+	 	padding-top: 50px;
+	 }
+
+
+ 	a.custom-card,
+	a.custom-card:hover {
+	  color: #212529;
+	  text-decoration: none;
+	}
+
+
+	</style>
+
+	<div class="container" id="cont"> 
+
+		<div class="card-deck">
+
+
+			<a href="/login/leaves" class="custom-card">
+			<div class="card border-primary mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Status : approved</div>
+			  <div class="card-body text-primary">
+			    <h5 class="card-title">From xx/yy/zz</h5>
+			    <h5 class="card-title">For dd days</h5>
+			    <p class="card-text">Subject for leave for leave</p>
+			  </div>
+			</div>
+			</a>
+
+
+			<a href="/login/leaves" class="custom-card">
+			<div class="card border-secondary mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Status : approved</div>
+			  <div class="card-body text-secondary">
+			    <h5 class="card-title">From xx/yy/zz</h5>
+			    <h5 class="card-title">For dd days</h5>
+			    <p class="card-text">Subject for leave for leave</p>
+			  </div>
+			</div>
+			</a>
+
+			<a href="/login/leaves" class="custom-card">
+			<div class="card border-success mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Status : approved</div>
+			  <div class="card-body text-success">
+			    <h5 class="card-title">From xx/yy/zz</h5>
+			    <h5 class="card-title">For dd days</h5>
+			    <p class="card-text">Subject for leave for leave</p>
+			  </div>
+			</div>
+			</a>
+
+		</div>
+		<div class="card-deck">
+
+			<div class="card border-danger mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Pay Slip</div>
+			  <div class="card-body text-danger">
+			    <h5 class="card-title">Month and year</h5>
+			    <p class="card-text">Amount and more details about bonous!!!</p>
+			  </div>
+			</div>
+			<div class="card border-warning mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Pay Slip</div>
+			  <div class="card-body text-warning">
+			    <h5 class="card-title">Month and year</h5>
+			    <p class="card-text">Amount and more details about bonous!!!</p>
+			  </div>
+			</div>
+			<div class="card border-info mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Pay Slip</div>
+			  <div class="card-body text-info">
+			    <h5 class="card-title">Month and year</h5>
+			    <p class="card-text">Amount and more details about bonous!!!</p>
+			  </div>
+			</div>
+
+		</div>	
+
+	</div>
+
+{% endblock %}

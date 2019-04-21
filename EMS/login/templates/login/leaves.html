@@ -1,0 +1,71 @@
+{% extends 'login/basic.html' %}
+
+{% block title%}Leave{% endblock %}
+
+
+
+
+{% block style%}
+{% endblock %}
+
+
+{% block body%}
+
+	<style>
+	 #cont { 
+	  	padding-top: 35px;
+	}
+	</style>
+
+
+
+
+	<div class="container-fluid" id="cont">
+	<div class="row">
+
+
+	    <div class="col" align="center">
+	      <div class="card text-left" style="width: 18rem;">
+		  <div class="card-body">
+		    <h5 class="card-title">Number of leaves : xx</h5>
+		    <h5 class="card-title">Date : xx/yy/zz</h5>
+		  </div>
+		 </div>
+	    </div>
+
+
+
+	    <div class="col-6">	
+			<div class="jumbotron">
+			  <h1 class="display-5">Subject</h1>
+			  <p class="lead">Reason for leave.</p>
+			  <hr class="my-4">
+			  <h2>name</h2>
+			  <p>Comment form the person</p>
+			  <h2>name</h2>
+			  <p>Comment form the person</p>
+			  <form>
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Write your comment here">
+			  </div>
+			  <a class="btn btn-primary btn-lg" href="/login/leaves" role="button">Comment</a>
+			  </form>
+			</div>
+	    </div>
+
+
+
+	    <div class="col" align="center">
+	      <div class="card text-left" style="width: 18rem;">
+		  <div class="card-body">
+		    <h5 class="card-title">Status</h5>
+		    <p class="card-text">Pending</p>
+		  </div>
+		  </div>
+	    </div>
+
+
+	</div>
+	</div>
+
+{% endblock %}
