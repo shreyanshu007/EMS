@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['localhost']
 
 INSTALLED_APPS = [
     'login.apps.LoginConfig',
+    'role.apps.RoleConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
